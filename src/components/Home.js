@@ -47,7 +47,7 @@ function Home() {
   //fetches book data on first component load
   const fetchData = async () => {
     try {
-      await fetch("/get-books")
+      await fetch("https://book-app-node.onrender.com/get-books")
         .then((response) => response.json())
         .then((data) => {
           dispatch(getBooks(data));
