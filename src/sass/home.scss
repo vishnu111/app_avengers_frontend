@@ -1,0 +1,80 @@
+.all-books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  margin-block: 2rem;
+  padding: 0 1rem;
+  justify-items: center;
+  align-items: center;
+  .book-card {
+    cursor: pointer;
+    transition: transform 0.3s;
+    img {
+      max-width: 190px;
+      min-height: 322px;
+    }
+    h4,
+    p {
+      text-align: center;
+      margin: 13px 0px;
+      max-width: 190px;
+    }
+
+    border: 1px solid orange;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    .quick-view-button {
+      display: none;
+      position: absolute;
+      bottom: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      border-color: orange;
+      color: orange;
+      border: 1px solid orange;
+      padding: 5px;
+    }
+
+    &:hover .quick-view-button {
+      display: block;
+    }
+  }
+}
+.carousel-home {
+  margin: 0px -30px;
+  padding-bottom: 35px;
+  a {
+    cursor: pointer;
+  }
+}
+.page-title {
+  text-align: center;
+}
+.hide-nav-home {
+  .nav-bar-main {
+    display: none;
+  }
+}
+.Home {
+  .hide-nav-home {
+    max-width: 600px;
+    margin: 0 auto;
+    border-top: 3px solid grey;
+    border-bottom: 3px solid grey;
+  }
+}
+.home-icon-pack {
+  margin: 20px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}

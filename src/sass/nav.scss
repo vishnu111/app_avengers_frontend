@@ -1,0 +1,58 @@
+.nav-bar-main {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: lightpink;
+  margin: 0px -30px;
+  .nav-bar-div {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    align-items: center;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    img {
+      max-height: 55px;
+    }
+    .cart-nav-item {
+      position: relative;
+      .cart-number {
+        position: absolute;
+        top: -19px;
+        background-color: #fff;
+        color: black;
+        border-radius: 100px;
+        padding: 3px;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .nav-bar-div {
+    a {
+      font-size: 10px;
+    }
+    img {
+      max-height: 30px !important;
+    }
+    .hide-mobile {
+      display: none;
+    }
+  }
+  .hide-nav-home {
+    max-width: 400px !important;
+    .home-icon-pack {
+      gap: 20px;
+    }
+  }
+  .all-books {
+    padding: 0px !important;
+    .book-card img {
+      max-width: 350px !important;
+    }
+  }
+}
